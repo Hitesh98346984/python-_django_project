@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:  #000;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color:#000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px 0px #00FF00; /* Neon green glow effect */
+
+        h1 {
+            font-size: 36px;
+            color:  #00ff00;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #00ff00;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color:  #00ff00;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #33ff66;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thank You for Submitting the Form!</h1>
+        <p>Your submission has been received.</p>
+        <a href="{% url 'student_info' %}" class="btn">Fill Another Form</a>
+    </div>
+</body>
+</html>
